@@ -1,11 +1,7 @@
 plugins {
-    `java-library`
-}
-repositories {
-    jcenter()
+    id("thisbuild.java-subproject")
 }
 
 dependencies {
-    testImplementation("junit:junit:4.+")
-    implementation("org.apache.commons:commons-math3:+")
+    implementation(externalLibraries.commonsMath)
 }
