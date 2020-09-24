@@ -11,5 +11,6 @@ repositories {
 extensions.create<ExternalLibrariesExtension>("externalLibraries")
 
 dependencies {
+    implementation(platform(project(":platform")))
     testImplementation(project.extensions.getByType(ExternalLibrariesExtension::class).junit)
 }
