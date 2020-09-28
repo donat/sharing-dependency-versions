@@ -1,10 +1,6 @@
 rootProject.name = "sharing-dependency-versions"
-include("lib")
+
+includeBuild("dependency-versions")
 includeBuild("build-src")
 
-pluginManagement {
-    repositories {
-        maven(url = "dependency-versions-plugin/repo")
-        gradlePluginPortal()
-    }
-}
+include("lib")

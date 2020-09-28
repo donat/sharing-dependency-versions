@@ -1,5 +1,6 @@
 plugins {
-    id("thisbuild.java-platform")
+    id("thisbuild.external-libraries")
+    `java-platform`
 }
 
 

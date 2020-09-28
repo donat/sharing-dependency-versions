@@ -1,5 +1,5 @@
 plugins {
-    id("thisbuild.java-subproject")
+    id("thisbuild.my-java-library")
 }
 
 dependencies {
