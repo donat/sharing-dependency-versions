@@ -1,3 +1,4 @@
 rootProject.name = "build-src"
-include("thisbuild-java-subproject")
-include("thisbuild-java-platform")
+
+include("external-libraries")
+include("my-java-library")
