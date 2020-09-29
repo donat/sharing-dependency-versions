@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = "https://dl.bintray.com/jmfayard/maven" }
+    }
+}
+
+rootProject.name = 'test-refresh-versions'
+include('lib')
+
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url = "https://dl.bintray.com/jmfayard/maven" }
+    }
+    dependencies {
+        classpath("de.fayard.refreshVersions:refreshVersions") {
+            version {
+                strictly("0.9.5")
+            }
+        }
+    }
+}
+de.fayard.refreshVersions.RefreshVersionsSetup.bootstrap(settings)
