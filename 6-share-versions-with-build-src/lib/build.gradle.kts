@@ -4,5 +4,4 @@ plugins {
 
 dependencies {
     implementation(externalLibraries.commonsMath.gav)
-    testImplementation(externalLibraries.junit.gav) // TODO should go to convention plugin
 }
