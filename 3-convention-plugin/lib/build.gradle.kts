@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation(externalLibraries.commonsMath)
+    implementation(externalLibraries.commonsMath.ga)
 }
