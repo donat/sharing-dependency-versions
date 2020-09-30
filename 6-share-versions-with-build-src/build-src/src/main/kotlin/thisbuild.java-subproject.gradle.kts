@@ -8,5 +8,21 @@ repositories {
 }
 
 dependencies {
-    testImplementation(externalLibraries.junit.gav)
+    constraints {
+        api(externalLibraries.junit.ga) {
+            version {
+                strictly(externalLibraries.junit.version)
+            }
+        }
+    }
+
+    constraints {
+        api(externalLibraries.commonsMath.ga) {
+            version {
+                strictly(externalLibraries.commonsMath.version)
+            }
+        }
+    }
+
+    testImplementation(externalLibraries.junit.ga)
 }

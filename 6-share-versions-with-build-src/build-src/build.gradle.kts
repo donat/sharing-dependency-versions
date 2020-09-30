@@ -9,5 +9,14 @@ repositories {
 
 dependencies {
     implementation("com.example:dependency-versions")
-    testImplementation(externalLibraries.junit.gav) // test if the dependency versions can be used in buildSrc
+
+    // test if the dependency versions can be used in buildSrc
+    constraints {
+        api(externalLibraries.junit.ga) {
+            version {
+                strictly(externalLibraries.junit.version)
+            }
+        }
+    }
+    testImplementation(externalLibraries.junit.ga)
 }
